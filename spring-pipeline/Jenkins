@@ -1,0 +1,6 @@
+node {
+    git 'https://github.com/savishy/spring-petclinic'
+    bat 'mvn.cmd install'
+    bat 'mvn.cmd test'
+    archiveArtifacts '**/*.war'
+}
